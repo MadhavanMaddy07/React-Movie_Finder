@@ -1,0 +1,66 @@
+
+.movieName, .movieInfo{
+  font-size: 18px;
+  font-weight: 600;
+  color: white !important;
+  margin: 15px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cardImg{
+    aspect-ratio: 3/4;
+}
+.moviecontainer{
+    cursor: pointer !important;
+}
+.CloseBtn{
+    align-self: self-start;
+    justify-content: end !important;
+    text-align: right;
+}
+.CloseBtn button {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    color: aqua;
+}
+.CloseBtn button:hover{
+    background-color: gray;
+    transition: 0.5s;
+}
+.movieinfo{
+    font-size: 16px;
+  font-weight: 500;
+  color: white;
+  overflow: hidden;
+  margin: 4px 0;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+
+  & span {
+    opacity: 0.5;
+  }
+}
+.movieinfobox{
+    display: flex;
+    border: 3px solid gray;
+    max-width: 800px;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    
+    border-radius: 10px;
+}
+.rowBox{
+    align-items: center;
+}
+@media only screen and (max-width: 300px){
+    .movieinfobox{
+        width: 100%;
+    }
+}
